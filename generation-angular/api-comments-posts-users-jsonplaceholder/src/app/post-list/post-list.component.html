@@ -1,0 +1,17 @@
+<table border="1px">
+
+        <th>User Id</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Body</th>
+        
+        <tr *ngFor= "let item of posts">
+            <td>{{item.userId}}</td>
+            <td>{{item.id}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.body}}</td>
+        </tr>
+    
+    </table>
+    <br>
+    <h1>Quantidade de usuários: {{posts.length}}</h1>

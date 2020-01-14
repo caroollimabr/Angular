@@ -1,0 +1,14 @@
+<table border="3px">
+    <tr>
+        <th>UserId</th>
+        <th>ID</th>
+        <th>title</th>
+        <th>Body</th>
+    </tr>
+    <tr *ngFor="let item of coments">
+        <td>{{item.userId}}</td>
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.body}}</td>
+    </tr>
+</table>

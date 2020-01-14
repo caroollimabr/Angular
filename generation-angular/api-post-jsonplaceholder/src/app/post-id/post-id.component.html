@@ -1,0 +1,12 @@
+<input type="number" id="textComments" [(ngModel)]="id" />
+<br/>
+<button (click)="searchClick()">Search</button>
+<br/>
+<br/>
+
+<h1>Comments</h1>
+
+User Id:<label *ngIf="comments.userId != 0"> {{comments.userId}}</label> <br> Id: <label *ngIf="comments.id != 0"> {{comments.id}}</label>
+<br> Title: {{comments.title}}
+<br> Body: {{comments.body}}
+<br>

@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="container col-12">
+    <div class="row">
+        <div class="col-2 bg-dark">
+
+                <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+
+        </div>
+        <div class="col-8">
+            <router-outlet></router-outlet>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
+<!-- <a [routerLink]="'/user-list'">GetAllUsers</a> <br/>
+<a [routerLink]="'/user-id'">GetUserById</a> <br/>
+<br/>
+<a [routerLink]="'/post-list'">GetAllPosts</a> <br/>
+<a [routerLink]="'/post-id'">GetPostById</a> <br/>
+<br/>
+<a [routerLink]="'/comments-list'">GetAllComments</a> <br/>
+<a [routerLink]="'/comments-id'">GetCommentsById</a> <br/>
+<br/> -->

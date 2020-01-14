@@ -1,0 +1,29 @@
+<input type="number" placeholder="Digite um número!" [(ngModel)]="id">
+<input type="button" (click)="searchClick()" value="Enviar"><br/><br/>
+
+<h1>USER</h1>
+Name: {{user.name}}<br/>
+Username: {{user.username}}<br/>
+Email: {{user.email}}<br/>
+Phone: {{user.phone}}<br/>
+Website: {{user.website}}<br/>
+
+<div class="tab" *ngIf="user.company != null">
+    <h2>Company</h2>
+    Name: {{user.company.name}}<br/>
+    CatchPhrase: {{user.company.catchPhrase}}<br/>
+    Bs: {{user.company.bs}}<br/> 
+</div>
+
+<div class="tab" *ngIf="user.address != null">
+    <h2>Address</h2>
+    Street: {{user.address.street}}<br/>
+    Suite: {{user.address.suite}}<br/>
+    City: {{user.address.city}}<br/>
+    Zipcode: {{user.address.zipcode}}<br/>
+    <div class="tab" *ngIf="user.address.geo != null">
+        <h2>Geo</h2>
+        lat: {{user.address.geo.lat}}<br/>
+        lng: {{user.address.geo.lng}}<br/>
+    </div>
+</div>

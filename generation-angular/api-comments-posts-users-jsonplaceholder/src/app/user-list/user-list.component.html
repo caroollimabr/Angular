@@ -1,0 +1,17 @@
+<table border="1px">
+
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Phone</th>
+    
+    <tr *ngFor= "let item of users">
+        <td>{{item.name}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+    </tr>
+
+</table>
+<br>
+<h1>Quantidade de usuários: {{users.length}}</h1>
