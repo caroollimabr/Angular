@@ -22,3 +22,4 @@ app>core>user> criar user.service.spec.ts
 app>core>auth> criar auth.service.spec.ts
 app>core>footer> criar footer.component.spec.ts
 app>core>header> criar header.component.spec.ts
+app>home>signup> criar signup.component.spec.ts
