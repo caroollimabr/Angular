@@ -1,0 +1,25 @@
+Jasmine é a linguagem usada para fazer testes no ts
+Karma é o executor de testes
+
+Todo teste deve ter os seguintes passos:
+1. Preparação (levantamento de cenários)
+2. Execução (chamada dos métodos e tal)
+3. Avaliação (o que vc espera que aconteça)
+
+É ideal que sempre façamos um 
+Smoke test: verifica que as funções mais importantes estão funcionando
+
+Às vezes, é interessante criar um
+Testbed - framework de teste do Angular: pode-se criar um mini-módulo para teste e assim, simplificar a criação dos objetos para teste do Angular
+Spy - "dublê" em um teste de outra classe. Serve para não ter que testar outra classe desnecessariamente.
+
+
+ng test - solicita teste Angular e Jasmine
+
+shared>components>validators> criar lower-case.validator.spec.ts
+app>core>token> criar token.service.spec.ts
+app>core>user> criar user.service.spec.ts
+app>core>auth> criar auth.service.spec.ts
+app>core>footer> criar footer.component.spec.ts
+app>core>header> criar header.component.spec.ts
+app>home>signup> criar signup.component.spec.ts
